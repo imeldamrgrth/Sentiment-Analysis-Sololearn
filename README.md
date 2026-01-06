@@ -1,4 +1,6 @@
 # **Sentiment Analysis of Sololearn Reviews**
+
+## Overview
 This project is a practical application of sentiment analysis using natural language processing (NLP) and machine learning techniques.
 It demonstrates the end-to-end workflow of analyzing textual data:
 - Data cleaning and preprocessing
@@ -25,9 +27,24 @@ The goal is to extract actionable insights from user reviews, understand user sa
  
 ---
 
-## Visualizations
-- Sentiment distribution (bar plot) – shows how many reviews fall into each sentiment category
-- Review length per sentiment (boxplot) – illustrates the variation in review lengths across sentiment classes
-- Wordclouds per sentiment – highlights the most frequent words in each sentiment category
+## Workflow
+The project follows an end-to-end sentiment analysis workflow:
+Data Collection – Raw user reviews are collected in sololearn_raw.csv.
+Data Cleaning & Preprocessing – Text is cleaned by removing noise, normalizing words, and preparing for analysis.
+Sentiment Labeling – Reviews are labeled as positive, neutral, or negative using:
+Lexicon-based approach (custom positive/negative/neutral word lists)
+VADER sentiment scoring (pre-built NLP lexicon)
+Combination of both for more robust labeling
+Feature Extraction – Text is transformed into numerical features using:
+TF-IDF (Term Frequency–Inverse Document Frequency)
+Word2Vec embeddings (vector representation of words capturing context)
+Model Training & Evaluation – Models are trained to classify sentiment:
+Logistic Regression
+Random Forest
+Models are evaluated and compared for performance (accuracy, classification metrics)
+Visualization & Insights – Data and sentiment patterns are visualized using:
+Bar plots (sentiment distribution)
+Boxplots (review length per sentiment)
+Wordclouds (most frequent words per sentiment)
 
 ---
